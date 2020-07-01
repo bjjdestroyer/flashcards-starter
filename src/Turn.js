@@ -20,10 +20,13 @@ class Turn {
     }
   }
   giveFeedback() {
-    if (this.guessCorrect === true) {
-      return "correct!";
-    } else {
-      return "incorrect!";
+    switch(this.guessCorrect) {
+      case true:
+				return "correct!"
+				break;
+			case false:  
+				return "incorrect!";
+				break;
     }
   }
 }
