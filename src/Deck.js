@@ -5,16 +5,8 @@ class Deck {
   }
   countCards() {
     this.cards.forEach(card => this.numberOfCards++);
+    return this.numberOfCards;
   }
 }
-
-// prototypeData.forEach(creatingCard => {
-//     let card = new Card(creatingCard.id, triviaCard.question...)
-//     push card pileOfCards
-// })
-
-// let pileOfCards = []
-
-// const deck = new Deck(pileOfCards)
 
 module.exports = Deck;
