@@ -17,14 +17,17 @@ class Round {
 
     var guessEval = turn.evaluateGuess();
 
-    if (guessEval === false) {
-      this.turns++;
-      this.incorrectGuesses.push(this.currentCard.id);
-      return turn.giveFeedback();
-    } else {
-      this.turns = this.turns + 1;
-      this.currentCard = this.cards[this.currentCard.id];
-      return turn.giveFeedback();
+    switch (guessEval) {
+      case false:
+        this.turns++;
+        this.incorrectGuesses.push(this.currentCard.id);
+        return turn.giveFeedback();
+        break;
+      case true:
+        this.turns = this.turns + 1;
+        this.currentCard = this.cards[this.currentCard.id];
+        return turn.giveFeedback();
+        break;
     }
   }
   calculatePercentCorrect() {
