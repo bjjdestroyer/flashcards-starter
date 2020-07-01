@@ -10,8 +10,7 @@ class Round {
     this.cards = cards;
   }
   returnCurrentCard(currentTurn) {
-    this.currentCard = currentTurn.returnCard();
-    return currentTurn.returnCard();
+    return this.currentCard;
   }
   takeTurn(userGuess) {
     var turn = new Turn(userGuess, this.currentCard);
@@ -33,7 +32,8 @@ class Round {
   }
   endRound() {
     if (this.currentCard === undefined) {
-      return `** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`;
+      console.log(`** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`);
+      return process.exit();
     }
   }
 }
