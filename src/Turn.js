@@ -18,7 +18,6 @@ class Turn {
       this.guessCorrect = false;
       return false;
     }
-    //this.userGuess === this.currentCard.correctAnswer ? true : false;
   }
   giveFeedback() {
     if (this.guessCorrect === true) {
