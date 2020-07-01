@@ -28,7 +28,8 @@ class Round {
     }
   }
   calculatePercentCorrect() {
-    return 100 - ((this.incorrectGuesses.length / this.turns) * 100);
+    const finalPercent = 100 - ((this.incorrectGuesses.length / this.turns) * 100);
+    return finalPercent.toFixed();
   }
   endRound() {
     if (this.currentCard === undefined) {
