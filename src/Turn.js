@@ -1,32 +1,32 @@
 class Turn {
-    constructor(userGuess, currentCard) {
-        this.userGuess = userGuess,
-        this.currentCard = currentCard,
-        this.guessCorrect = null;
+  constructor(userGuess, currentCard) {
+    this.userGuess = userGuess,
+    this.currentCard = currentCard,
+    this.guessCorrect = null;
+  }
+  returnGuess() {
+    return this.userGuess;
+  }
+  returnCard() {
+    return this.currentCard;
+  }
+  evaluateGuess() {
+    if (this.userGuess === this.currentCard.correctAnswer) {
+      return this.guessCorrect = true;
+    } else {
+      return this.guessCorrect = false;
     }
-    returnGuess() {
-        return this.userGuess;
+  }
+  giveFeedback() {
+    switch(this.guessCorrect) {
+    case true:
+			return "correct!"
+			break;
+		case false:  
+			return "incorrect!";
+			break;
     }
-    returnCard() {
-        return this.currentCard;
-    }
-    evaluateGuess() {
-        if (this.userGuess === this.currentCard.correctAnswer) {
-            this.guessCorrect = true;
-            return true;
-        } else {
-            this.guessCorrect = false;
-            return false;
-        }
-        //this.userGuess === this.currentCard.correctAnswer ? true : false;
-    }
-    giveFeedback() {
-        if (this.guessCorrect === true) {
-            return "correct!";
-        } else {
-            return "incorrect!";
-        }
-    }
+  }
 }
 
 module.exports = Turn;
