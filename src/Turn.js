@@ -12,21 +12,19 @@ class Turn {
   }
   evaluateGuess() {
     if (this.userGuess === this.currentCard.correctAnswer) {
-      this.guessCorrect = true;
-      return true;
+      return this.guessCorrect = true;
     } else {
-      this.guessCorrect = false;
-      return false;
+      return this.guessCorrect = false;
     }
   }
   giveFeedback() {
     switch(this.guessCorrect) {
-      case true:
-				return "correct!"
-				break;
-			case false:  
-				return "incorrect!";
-				break;
+    case true:
+			return "correct!"
+			break;
+		case false:  
+			return "incorrect!";
+			break;
     }
   }
 }
