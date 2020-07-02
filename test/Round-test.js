@@ -92,7 +92,7 @@ describe('Round', function () {
     expect(round.takeTurn('jack')).to.equal('incorrect!');
     expect(round.takeTurn('object')).to.equal('correct!');
     let percentCalculated = round.calculatePercentCorrect();
-    expect(percentCalculated.toFixed()).to.equal(25);
+    expect(percentCalculated.toFixed()).to.equal((25).toFixed());
   });
 
   it('should end the round when all questions have been answered', function () {
