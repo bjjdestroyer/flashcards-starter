@@ -150,6 +150,28 @@ const prototypeData = [{
   "correctAnswer": "prototype method"
 }]
 
+const objectData = [{
+  "id": 1,
+  "question": "What is one type of way to create an object?",
+  "answers": ["function", "object literal", "variable"],
+  "correctAnswer": "object literal"}, 
+  {"id": 2,
+  "question": "How can you create multiple objects without writing it out every time?",
+  "answers": ["class constructor", "object literal", "function"],
+  "correctAnswer": "class constructor"}, 
+  {"id": 3,
+  "question": "What is a previous way to create multiple objects?",
+  "answers": ["constructor function", "object literal", "array"],
+  "correctAnswer": ""}, 
+  {"id": 4,
+  "question": "What are the key/value pairs in objects called?",
+  "answers": ["properties", "functions", "arrays"],
+  "correctAnswer": "properties"}, 
+  {"id": 5,
+  "question": "What are functions called in objects?",
+  "answers": ["methods", "arrays", "variables"],
+  "correctAnswer": "methods"}]
+
 module.exports = {
   prototypeData 
 }
