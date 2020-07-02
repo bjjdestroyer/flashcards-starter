@@ -12,14 +12,14 @@ In this project, I created a game playable through the command line. This game s
 1. Clone this repository and install on your computer through the command line
   - Open your terminal and find the directory you want to install the game in.
   - Copy and paste in:
-    git clone git@github.com:bjjdestroyer/flashcards-starter.git
+    > git clone git@github.com:bjjdestroyer/flashcards-starter.git
   - Move into the clone directory and install
-    npm install
+    > npm install
 2. Once the game is installed, you can run the tests to see if they pass
   - Type in npm test in the terminal
   - In Round.js, the final method needs to change the console.log to a return and process.exit() needs to be commented out to pass the test and move one to the next testing suite.
 3. To run the game itself
   - In the terminal, type in 
-    node index.js
+    > node index.js
   - The game will start and you need to either type in the number of your answer choice or use your arrow keys to choose. Once chosen, press enter, and you've started the game!
 
