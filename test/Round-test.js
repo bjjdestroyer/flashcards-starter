@@ -3,7 +3,6 @@ const expect = chai.expect;
 
 const Round = require('../src/Round');
 const Card = require('../src/Card');
-const Turn = require('../src/Turn');
 
 describe('Round', function () {
   const card1 = new Card(1, "What allows you to define a set of related information using key-value pairs?", ["object", "array", "function"], "object");
@@ -24,9 +23,8 @@ describe('Round', function () {
 
   it('should return current card being played', function () {
     const round = new Round(cards);
-    const turn = new Turn('object', card1);
 
-    expect(round.returnCurrentCard(turn)).to.equal(card1);
+    expect(round.returnCurrentCard()).to.equal(card1);
   });
 
   it('should start a new turn when a guess is made', function () {
