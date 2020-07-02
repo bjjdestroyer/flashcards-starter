@@ -20,11 +20,11 @@ class Turn {
   giveFeedback() {
     switch(this.guessCorrect) {
     case true:
-			return "correct!"
-			break;
-		case false:  
-			return "incorrect!";
-			break;
+      return "correct!"
+      break;
+    case false:  
+      return "incorrect!";
+      break;
     }
   }
 }
