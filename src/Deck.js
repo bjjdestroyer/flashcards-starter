@@ -4,7 +4,7 @@ class Deck {
     this.numberOfCards = 0;
   }
   countCards() {
-    this.cards.forEach(card => this.numberOfCards++);
+    this.cards.forEach( () => this.numberOfCards++);
     return this.numberOfCards;
   }
 }
