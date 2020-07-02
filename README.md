@@ -4,6 +4,11 @@
 In this project, I created a game playable through the command line. This game showed a "card" with a question and 3 possible answers. The user chooses their answer and the game does not move on until the correct answer is chosen.
 
 ### Game in Use
+## Beginning of the Game
+![Shows the game from initialization to a few questions in, with correct and incorrect answers](assets/startOfGame.gif)
+
+## End of the Game
+![Shows the last few questions and the end of game response](assets/endOfGame.gif)
 
 ### Next Steps
 - Add in functionality that allows the user to use more than one data set to create cards
